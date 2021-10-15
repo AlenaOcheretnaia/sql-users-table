@@ -1,0 +1,5 @@
+SELECT product_name, name
+FROM ORDERS
+LEFT JOIN CUSTOMERS
+ON ORDERS.customer_id = CUSTOMERS.id
+WHERE LOWER(CUSTOMERS.name) LIKE '%alexey%';
