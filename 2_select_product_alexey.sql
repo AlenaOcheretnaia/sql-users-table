@@ -1,4 +1,4 @@
-SELECT product_name, name
+SELECT product_name
 FROM ORDERS
 LEFT JOIN CUSTOMERS
 ON ORDERS.customer_id = CUSTOMERS.id
